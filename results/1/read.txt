@@ -1,0 +1,24 @@
+Labels vs Predictions sample from *TRAINING* set.
+
+Training: 
+	IMAGE_SIZE = 224
+	NUM_GRIDS = 7
+	NUM_BBOXES = 2
+	NUM_CLASSES = 4
+
+	LAMBDA_COORD = 2
+	LAMBDA_OBJ = 1
+	LAMBDA_NOOBJ = 0.5
+	LAMBDA_CLS = 1
+
+use Adam optimizer with warmup epochs with:
+	EPOCHS = 20
+	LEARNING_RATE = 5e-4
+	WEIGHT_DECAY = 0.01
+	BATCH_SIZE = 16
+
+then:
+	EPOCHS = 1000
+	LEARNING_RATE = 1e-2
+	WEIGHT_DECAY = 0.005
+	BATCH_SIZE = 16
